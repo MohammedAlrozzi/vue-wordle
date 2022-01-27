@@ -43,7 +43,7 @@ onUnmounted(() => {
 
 function onKey(key: string) {
   if (!allowInput) return
-  if (/^[أبتثجحخدذرزسشصضطظعغفقكلمنهويىؤءئ]$/.test(key)) {
+  if (/^[\u00C0-\u00ff]$/.test(key)) {
     fillTile(key.toLowerCase())
   } else if (key === 'Backspace') {
     clearTile()
