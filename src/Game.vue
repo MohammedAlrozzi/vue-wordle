@@ -221,6 +221,8 @@ function genResultGrid() {
 </template>
 
 <style scoped>
+@import url("https://use.typekit.net/wkw8txp.css");
+
 #board {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
@@ -244,6 +246,8 @@ function genResultGrid() {
   transform: translateX(-50%);
   transition: opacity 0.3s ease-out;
   font-weight: 600;
+  font-family: skolar-sans-arabic, sans-serif;
+
 }
 .message.v-leave-to {
   opacity: 0;
