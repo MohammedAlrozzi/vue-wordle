@@ -1,8 +1,10 @@
 body {
-  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   max-width: 500px;
   margin: 0px auto;
+  background-color: blanchedalmond;
+  
 }
 
 h1 {
