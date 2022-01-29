@@ -79,7 +79,7 @@ button {
   transition: all 0.2s 1.5s;
 }
 button:last-of-type {
-  margin: 0;
+  margin: 0 6px 0 0;
 }
 button.big {
   flex: 1.5;
