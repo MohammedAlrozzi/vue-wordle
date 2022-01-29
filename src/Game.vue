@@ -179,13 +179,8 @@ function genResultGrid() {
     </div>
   </Transition>
   <header>
-    <h1>WORDLE in Arabic</h1>
-    <a
-      id="source-link"
-      href="https://github.com/yyx990803/vue-wordle"
-      target="_blank"
-      >Source</a
-    >
+    <h1 style="direction:rtl">وردل بالعربية</h1>
+    
   </header>
   <div id="board">
     <div
@@ -215,7 +210,14 @@ function genResultGrid() {
       </div>
     </div>
   </div>
+ 
   <Keyboard @key="onKey" :letter-states="letterStates" />
+   <p style="font-size:smaller;direction:rtl">تم تطوير الأحجية بناء على أعمال عدد من المطورين وتم الاستفادة بشكل خاص من النسخة المتوفرة عبر هذا <a
+      href="https://github.com/yyx990803/vue-wordle"
+      target="_blank"
+      >المصدر</a
+    ></p>
+    <br>
 </template>
 
 <style scoped>
