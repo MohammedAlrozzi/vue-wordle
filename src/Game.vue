@@ -134,7 +134,7 @@ function completeRow() {
     }
   } else {
     shake()
-    showMessage('عدد الحروف ليس كافيا ً')
+    showMessage('أضف المزيد من الحروف')
   }
 }
 
@@ -180,6 +180,7 @@ function genResultGrid() {
   </Transition>
   <header>
     <h1 style="direction:rtl">وردل بالعربية</h1>
+    <h2>Wordle Arabic community</h2>
     
   </header>
   <div id="board">
@@ -216,6 +217,11 @@ function genResultGrid() {
       href="https://github.com/yyx990803/vue-wordle"
       target="_blank"
       >المصدر</a
+    ></p>
+     <p style="font-size:smaller;">This puzzle game - Wordle Arabic community - is developed and translated to Arabic based on several developers' works. <a
+      href="https://github.com/yyx990803/vue-wordle"
+      target="_blank"
+      >Source</a
     ></p>
     <br>
 </template>
