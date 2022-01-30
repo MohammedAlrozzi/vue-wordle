@@ -230,6 +230,7 @@ function genResultGrid() {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
   font-weight: 400;
   font-style: normal;
+  color:rgb(138, 90, 19)
 }
 
 #board {
