@@ -179,9 +179,8 @@ function genResultGrid() {
     </div>
   </Transition>
   <header>
-    <h1 style="direction:rtl">وردل بالعربية</h1>
+    <h1 style="direction:rtl" class="dorma">وردل بالعربية</h1>
     <h2>Wordle Arabic community</h2>
-    
   </header>
   <div id="board">
     <div
@@ -213,12 +212,12 @@ function genResultGrid() {
   </div>
  
   <Keyboard @key="onKey" :letter-states="letterStates" />
-   <p style="font-size:smaller;direction:rtl;">تم تطوير الأحجية بناء على أعمال عدد من المطورين وتم الاستفادة بشكل خاص من النسخة المتوفرة عبر هذا <a
+   <p style="font-size:smaller;direction:rtl;" class="dorma">تم تطوير الأحجية بناء على أعمال عدد من المطورين وتم الاستفادة بشكل خاص من النسخة المتوفرة عبر هذا <a
       href="https://github.com/yyx990803/vue-wordle"
       target="_blank"
       >المصدر</a
     ></p>
-     <p style="font-size:smaller;">This puzzle game - Wordle Arabic community - is developed and translated to Arabic based on several developers' works. <a
+     <p style="font-size:smaller;" class="dorma">This puzzle game - Wordle Arabic community - is developed and translated to Arabic based on several developers' works. <a
       href="https://github.com/yyx990803/vue-wordle"
       target="_blank"
       >Source</a
@@ -227,7 +226,11 @@ function genResultGrid() {
 </template>
 
 <style scoped>
-@import url("https://use.typekit.net/wkw8txp.css");
+.dorma {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 #board {
   display: grid;
