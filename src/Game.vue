@@ -195,13 +195,13 @@ function genResultGrid() {
         v-for="(tile, index) in row"
         :class="['tile', tile.letter && 'filled', tile.state && 'revealed']"
       >
-        <div class="front" :style="{ transitionDelay: `${index * 900}ms` }">
+        <div class="front" :style="{ transitionDelay: `${index * 300}ms` }">
           {{ tile.letter }}
         </div>
         <div
           :class="['back', tile.state]"
           :style="{
-            transitionDelay: `${index * 900}ms`,
+            transitionDelay: `${index * 300}ms`,
             animationDelay: `${index * 100}ms`
           }"
         >
@@ -242,6 +242,7 @@ function genResultGrid() {
   height: var(--height);
   width: min(350px, calc(var(--height) / 6 * 5));
   margin: 0px auto;
+
 }
 .message {
   position: absolute;
@@ -255,7 +256,7 @@ function genResultGrid() {
   transform: translateX(-50%);
   transition: opacity 0.3s ease-out;
   font-weight: 600;
-  font-family: skolar-sans-arabic, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
 
 }
 .message.v-leave-to {
@@ -293,12 +294,18 @@ function genResultGrid() {
   transition: transform 0.6s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+
 }
 .tile .front {
   border: 2px solid #d3d6da;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+
 }
 .tile.filled .front {
   border-color: #999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+
 }
 .tile .back {
   transform: rotateX(180deg);
