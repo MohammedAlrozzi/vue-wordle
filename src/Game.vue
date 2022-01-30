@@ -196,13 +196,13 @@ function genResultGrid() {
         v-for="(tile, index) in row"
         :class="['tile', tile.letter && 'filled', tile.state && 'revealed']"
       >
-        <div class="front" :style="{ transitionDelay: `${index * 300}ms` }">
+        <div class="front" :style="{ transitionDelay: `${index * 900}ms` }">
           {{ tile.letter }}
         </div>
         <div
           :class="['back', tile.state]"
           :style="{
-            transitionDelay: `${index * 300}ms`,
+            transitionDelay: `${index * 900}ms`,
             animationDelay: `${index * 100}ms`
           }"
         >
@@ -213,7 +213,7 @@ function genResultGrid() {
   </div>
  
   <Keyboard @key="onKey" :letter-states="letterStates" />
-   <p style="font-size:smaller;direction:rtl">تم تطوير الأحجية بناء على أعمال عدد من المطورين وتم الاستفادة بشكل خاص من النسخة المتوفرة عبر هذا <a
+   <p style="font-size:smaller;direction:rtl;">تم تطوير الأحجية بناء على أعمال عدد من المطورين وتم الاستفادة بشكل خاص من النسخة المتوفرة عبر هذا <a
       href="https://github.com/yyx990803/vue-wordle"
       target="_blank"
       >المصدر</a
@@ -383,4 +383,5 @@ function genResultGrid() {
     font-size: 3vh;
   }
 }
+
 </style>
