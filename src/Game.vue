@@ -298,12 +298,12 @@ function genResultGrid() {
 
 }
 .tile .front {
-  border: 2px solid #d3d6da;
+  border: 2px solid rgb(197, 120, 5);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
 
 }
 .tile.filled .front {
-  border-color: #999;
+  border-color: rgb(224, 157, 57);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
 
 }

@@ -68,7 +68,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   user-select: none;
-  background-color: #d3d6da;
+  background-color: rgb(250, 183, 83);
   color: #1a1a1b;
   flex: 1;
   display: flex;
