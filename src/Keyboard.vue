@@ -48,6 +48,8 @@ const rows = [
 #keyboard {
   margin: 30px 8px 0;
   user-select: none;
+  touch-action: manipulation;
+
 }
 .row {
   display: flex;
