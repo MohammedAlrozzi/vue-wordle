@@ -59,7 +59,6 @@ const rows = [
   flex: 0.5;
 }
 button {
-  font-family: inherit;
   font-weight: bold;
   border: 0;
   padding: 0;
@@ -77,6 +76,8 @@ button {
   text-transform: uppercase;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
   transition: all 0.2s 1.5s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,sans-serif;
+
 }
 button:last-of-type {
   margin: 0 6px 0 0;
