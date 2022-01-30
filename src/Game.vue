@@ -113,7 +113,7 @@ function completeRow() {
       setTimeout(() => {
         grid = genResultGrid()
         showMessage(
-          ['Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew'][
+          ['عبقري', 'رائع', 'مذهل', 'ممتاز', 'عظيم', 'أخيراً'][
             currentRowIndex
           ],
           -1
@@ -134,7 +134,7 @@ function completeRow() {
     }
   } else {
     shake()
-    showMessage('Not enough letters')
+    showMessage('عدد الحروف ليس كافيا ً')
   }
 }
 
